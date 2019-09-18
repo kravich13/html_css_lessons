@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+    <style>
+        #Reg {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 5px;
+            padding-bottom: 100px;
+            background: rgb(231, 231, 231);
+        }
+
+        h1 {
+            margin-left: 10px;
+            color: rgb(196, 52, 209);
+        }
+
+        #Pol {
+            /* padding-bottom: 100px; */
+            margin-left: 10px;
+            margin-right: 10px;
+            background: rgb(196, 196, 196);
+        }
+
+        .sub {
+            color: rgb(168, 2, 2);
+        }
+
+        .prod {
+            background: rgb(196, 64, 64);
+            display: block;
+            text-align: center;
+        }
+
+        footer.qeqe p {
+            display: block;
+            /* Отображать как строчный элемент */
+            margin-right: 15px;
+            /* Отступ слева */
+            border: 1px solid #000;
+            /* Рамка вокруг текста */
+            padding: 10px;
+            /* Поля вокруг текста */
+            width: 50%;
+            margin: 5px auto;
+        }
+
+        section.prod p,
+        section.prod h4 {}
+
+        div.Log p,
+        div.Log input {
+            display: inline;
+            margin-right: 150px;
+            /* Отступ слева */
+            padding: 0;
+            /* Поля вокруг текста */
+        }
+
+        input.rast {
+            width: 500px;
+        }
+
+        div.Pas p,
+        div.Pas input {
+            display: inline;
+        }
+
+        div.PPas p,
+        div.PPas input {
+            display: inline;
+        }
+
+        div.NickM p,
+        div.NickM input {
+            display: inline;
+        }
+
+        div.Poshta p,
+        div.Poshta input {
+            display: inline;
+        }
+
+        div.Podpis p,
+        div.Podpis input {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="Reg">
+        <h1>Регистрация</h1>
+
+        <section id="Pol">
+
+            <div class="Log">
+                <p>Логин<span class="sub"> *</span>.</p>
+                <input class="rast" type="Регистрация">
+            </div>
+
+            <div class="Pas">
+                <p>Пароль<span class="sub"> *</span>.</p>
+                <input class="rast" type="password">
+            </div>
+
+            <div class="PPas">
+                <p>Подтверждение пароля<span class="sub"> *</span>.</p>
+                <input class="rast" type="password">
+            </div>
+
+            <div class="NickM">
+                <p>Ваше полное имя<span class="sub"> *</span>.</p>
+                <input class="rast" type="text">
+            </div>
+
+            <div class="Poshta">
+                <p>E-mail адрес<span class="sub"> *</span>.</p>
+                <input class="rast" type="text">
+            </div>
+
+            <div class="Podpis">
+                <p>Ваша подпись: <br>
+                    -Максимум 2000 символов <br>
+                    -BB-коды запрещены
+                    <textarea name="podpis" id="" cols="30" rows="5"></textarea>
+                </p>
+            </div>
+
+            <section class="prod">
+                <h4>Для продолжения регистрации внимательно прочитайте все соглашения:</h4>
+
+                <p>
+                    <input type="checkbox" name="a" value="Я соглашаюсь и принимаю">
+                    Я соглашаюсь и принимаю
+                    <a href="vk.com">Первое соглашение</a>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="a" value="Я соглашаюсь и принимаю">
+                    Я соглашаюсь и принимаю
+                    <a href="vk.com">Второе соглашение</a>
+                </p>
+                <div class="qqqq">
+                    <p>
+                        <input type="checkbox" name="a" value="Я соглашаюсь и принимаю">
+                        Я соглашаюсь и принимаю
+                        <a href="vk.com">Третье соглашение</a>
+                    </p>
+                </div>
+            </section>
+        </section>
+
+    </section>
+    <footer class="qeqe">
+        <p>Логин</p>
+        <p>Пароль</p>
+        <p>Подтверждение</p>
+        <p>Эмейл</p>
+        <p>Ваша подпись: <br>
+            Максимум 1000 символов <br>
+            BB-коды запрещены</p>
+    </footer>
+</body>
+
+</html>
