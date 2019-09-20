@@ -53,7 +53,7 @@ table {
 }
 .container, .grid {
   margin: 0 auto;
-  width: 1600px;
+  width: 960px;
 }
 .container {
   padding-left: 30px;
@@ -73,8 +73,13 @@ h1, h3, h4, h5, p {
   ========================================
 */
 .btn {
-  border-radius: 50px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase; 
   margin: 0;
 }
 .btn-alt {
@@ -97,8 +102,8 @@ a:visited {
   color: rgb(0, 140, 221);
 }
 .btn-alt:hover {
-  background: lightslategray;
-  color: rgb(0, 207, 10);
+  background: #fff;
+  color: #648880
 }
 .teaser a:hover h3 {
   color: #a9b2b9;
@@ -109,6 +114,7 @@ a:visited {
   ========================================
 */
 .hero {
+  color: #fff;
   line-height: 36px;
   padding: 22px 80px 66px 80px;
   text-align: center;
@@ -151,6 +157,14 @@ a:visited {
   padding: 40px 0 22px 0;
   text-transform: uppercase;
 }
+.primate-header a,
+.primate-footer a {
+  color: #fff;
+}
+.primate-header a:hover,
+.primate-footer a:hover {
+  color: #648880;
+}
 /*
   ========================================
   Основной подвал
@@ -184,7 +198,8 @@ a:visited {
   ========================================
 */
 body {
-  color: #cc0000;
+  color: #7be600;
+  background: #293f50;
   font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4 {
@@ -237,4 +252,15 @@ h5 {
 */
 .nav {
   text-align: right;
+}
+/*
+  ========================================
+  Полосы
+  ========================================
+*/
+
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
 }
