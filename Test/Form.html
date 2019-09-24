@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <style>
+        div, form, input, select {
+            display: block;
+            margin: 20px 5px;
+        }
+        fieldset:nth-of-type(2) {
+            color: red;
+            display: block;
+        }
+        .enter input {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/login" method="post">
+
+            <input type="date" name="birthday">
+            <input type="time" name="game-time">
+            <input type="email" name="email-adress">
+            <input type="number" name="cost">
+            <input type="tel" name="phone-number">
+            <textarea name="commect" cols="30" rows="10">Комментарий</textarea>
+
+            <label for="radio">
+                <input type="radio" name="day" value="Fridey" checked>Хуятница
+                <input type="radio" name="day" value="Saturdey"> Суббота
+                <input type="radio" name="day" id="day1" value="sdasd"><label for="day1">lorem</label>
+                <input type="radio" name="day" id="day2" value="sdasd"><label for="day2">lorem</label>
+            </label>
+
+            <select name="day">
+                <option value="Friday" selected>Пятница</option>
+                <option value="Saturday">суббота</option>
+                <option value="Sunday">Воскресенье</option>
+            </select>
+
+            <select name="day" multiple>
+                <option value="Friday" selected>Пятница</option>
+                <option value="Saturday">суббота</option>
+                <option value="Sunday">Воскресенье</option>
+            </select>
+
+            <input type="submit" name="submit" value="Отправить">
+            <button name="submit">
+                <strong>Влад Кравич </strong> привет всем
+            </button>
+
+            <input type="file" name="file">
+
+            <input type="hidden" name="tracking-code" value="abc-123">
+
+        </form>
+    </div>
+
+    <label for="username">Имя пользователя</label>
+    <input type="text" name="username" id="username">
+
+    <fieldset>
+        <label>
+            Имя пользователя
+            <input type="text" name="username">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label>
+            Пароль
+            <input type="password" name="password">
+        </label>
+        <label>
+            Подтверждение пароля
+            <input type="password" name="podtpas">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Вход в систему</legend>
+        <label>
+            <input type="text" name="username">
+            Имя пользователя
+        </label>
+        <label>
+            <input type="password" name="password">
+            Пароль
+        </label>
+    </fieldset>
+
+    <label>
+        Имя пользователя
+    </label>
+    <input type="text" name="usermame" disabled>
+
+    <label>
+        Email
+        <input type="email" name="email" placeholder="name@gmail.com">
+    </label>
+
+    <label>
+        Email
+        <input type="email" name="email-adress" required>
+    </label>
+</body>
+
+</html>
