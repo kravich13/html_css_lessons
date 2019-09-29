@@ -1,12 +1,276 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Zagotovka</title>
+    <style>
+html,
+body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+    @media only screen and (max-width:1000px) {
+  footer {
+    width:100%;
+  }
+}
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+    a {
+        text-decoration: none;
+    }
+    .golova {
+        padding: 40px 0;
+        background-image: url(1280901073.jpg);   
+        background-repeat: no-repeat;     
+        background-position: 50%;
+        background-size: 100%; /* Современные браузеры */
+        /* background: rgb(83, 79, 79); */
+        border: 1px solid rgb(49, 49, 49);
+        position: relative;
+        min-width: 960px;
+        min-height: 50px;
+        display: block;
+    }
+    .golova p {
+        font-size: 50px;
+        font-weight: 700;
+        padding: 10px;      
+        /* border-bottom: 1px solid rgba(37, 13, 13, 0.658); */
+        font-family: 'Times New Roman', Arial, sans-serif;
+        color: rgba(255, 0, 0, 0.884);
+        text-align: center;
+    }
+    .golova .verh {
+        text-align: right;
+    }
+    .verh {
+        position: absolute;
+        right: 25px;
+        margin: 1px;
+    }
+    .verh li {
+        text-align: 35px;
+        margin-right: 0;
+        padding: 7px 15px;
+        background: rgba(201, 7, 7, 0.438);
+        border-radius: 6px;
+        display: inline-block;
+    }
+    .verh li a {
+        color: rgb(0, 0, 0);
+    }
+    .verh li:hover a {
+        color: aliceblue;
+    }
+    aside {
+        position: relative;
+        padding: 5px;
+        padding-bottom: auto;
+        display: block;
+        width: 13%;
+        float: left;
+        background: rgb(83, 79, 79);
+    }
+    .left1, .left2, .left3 { 
+        padding-bottom: 30px;
+    }
+    aside p {
+        color: aliceblue;
+        margin-bottom: 10px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.658);
+    }
+    aside ul {
+        color: aliceblue;
+        margin-bottom: 10px;
+    }
+    aside li {
+        color: aliceblue;
+    }
+    aside a {
+        color: aliceblue;
+    }
+    aside li:hover a {
+        color: rgb(206, 8, 8);
+    }
+    .text {
+        float: right;
+        width: 86%;
+        padding: 10px 4px;
+        background: rgb(231, 231, 231);
+    }
+    section .text1 {
+        border: 1px solid black;
+        display: block;
+        padding: 5px;
+        margin: 5px 10px;
+        background: silver;
+        
+    }
+    section .text2 {
+        border: 1px solid black;
+        display: block;
+        padding: 5px;
+        margin: 20px 10px;
+        background: silver;
+        
+    }
+    section a {
+        border: 2px solid black;
+        background: rgba(197, 119, 46, 0.575);
+        border-radius: 6px;
+        margin-bottom: 20px;
+        display: block;
+        padding: 5px;
+    }
+    footer {
+        background: linear-gradient(to left, rgba(189, 5, 5, 0.76), rgba(7, 187, 61, 0.75));
+        clear: both;
+        margin-bottom: 0;
+        display: block;
+        text-align: center;
+        padding: 50px;
+    }
+    </style>
 </head>
 <body>
+    
+    <header class="golova">
+        <p>Enemy</p>
+            <nav class="verh">
+                <ul>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Provident.</a></li>
+                    <li><a href="">Excepturi.</a></li>
+                    <li><a href="">Esse!</a></li>
+                    <li><a href="">Ut.</a></li>
+                    <li><a href="">Eligendi?</a></li>
+                    <li><a href="">Voluptate!</a></li>
+                    <li><a href="">Vel!</a></li>
+                    <li><a href="">Aliquam?</a></li>
+                    <li><a href="">Nobis.</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <aside>
+        <div class="left1">
+        <p>Vlad:</p>
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Beatae.</a></li>
+        <li><a href="">Iure!</a></li>
+        <li><a href="">Asperiores?</a></li>
+        <li><a href="">Cum.</a></li>
+        <li><a href="">Ullam.</a></li>
+        <li><a href="">Dignissimos?</a></li>
+        <li><a href="">Fugit!</a></li>
+    </div>
+
+    <div class="left2">
+        <p>Kravich:</p>
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Beatae.</a></li>
+        <li><a href="">Iure!</a></li>
+        <li><a href="">Asperiores?</a></li>
+        <li><a href="">Cum.</a></li>
+        <li><a href="">Ullam.</a></li>
+        <li><a href="">Dignissimos?</a></li>
+        <li><a href="">Fugit!</a></li>
+    </div>
+
+    <div class="left3">
+            <p>Kravich:</p>
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Beatae.</a></li>
+            <li><a href="">Iure!</a></li>
+            <li><a href="">Asperiores?</a></li>
+            <li><a href="">Cum.</a></li>
+            <li><a href="">Ullam.</a></li>
+            <li><a href="">Dignissimos?</a></li>
+            <li><a href="">Fugit!</a></li>
+        </div>
+    </aside>
+
+    <section class="text">
+
+        <section class="text1">
+            <a href="Влад Кравич!">Влад Кравич!</a>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo a magnam aliquam praesentium molestias
+                perferendis, laudantium totam nesciunt veniam enim, iure amet ea. Porro quo sunt beatae dignissimos ad.
+                Alias facilis optio magnam sunt, nulla quod minus fugiat consequatur ea totam suscipit architecto. Sint,
+                deserunt delectus possimus expedita ut nulla nobis repellat reprehenderit qui optio laboriosam voluptate
+                ratione unde!
+                Praesentium nesciunt dignissimos temporibus modi quos vitae veniam culpa neque nobis natus ipsa numquam
+                libero voluptates perferendis, eius id itaque alias ut exercitationem. Molestiae eos provident
+                inventore, ducimus numquam nostrum!
+                Beatae nobis at, incidunt nihil aliquid unde blanditiis officiis numquam ipsa! Sit velit nisi autem
+                deserunt voluptas, quia natus obcaecati ducimus iste sint inventore laboriosam aperiam! Quae possimus
+                cum tempora.
+                Modi reiciendis est velit, cumque porro necessitatibus hic quibusdam earum incidunt numquam sunt,
+                voluptates nesciunt inventore quasi vitae fugiat, neque voluptatem? Maxime odio est non ab delectus
+                sunt, magnam quas.
+                Inventore laborum in aliquam iusto eius esse aperiam natus. Ipsum, eaque neque nihil ab laudantium quam
+                at autem, in aliquid omnis consequuntur asperiores quisquam modi eos perferendis illum hic optio?
+                Fuga alias dolore voluptatum autem id molestiae vel aut, eaque non doloribus sunt at fugiat veritatis
+                iste architecto laborum. Quo error vel ex provident, tempore et rerum? Dolorem, ab aspernatur.
+                Impedit quisquam temporibus vel eveniet ad debitis odio veritatis reiciendis ducimus! Tempora voluptates
+                ex quas aliquid nostrum quam sit quidem in cupiditate blanditiis? Laborum excepturi deserunt provident!
+                Cum, harum laboriosam?
+                Nesciunt ratione, numquam veritatis repudiandae debitis nobis inventore perferendis modi. Nemo
+                praesentium amet vitae repellendus autem, tempora rerum culpa excepturi facilis voluptates ullam velit
+                corporis, laborum cupiditate beatae totam nam!
+                Eligendi eos vitae dicta, aliquam quibusdam ea. Architecto voluptatibus quae pariatur dolorum delectus
+                asperiores doloribus obcaecati possimus vel vero voluptatum a quod, inventore error laudantium quia
+                aspernatur. Autem, expedita quo!</p>
+            </section>
+            
+            <section class="text2">
+                    <a href="Влад Кравич!">Влад Кравич!</a>
+        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo a magnam aliquam praesentium molestias
+                        perferendis, laudantium totam nesciunt veniam enim, iure amet ea. Porro quo sunt beatae dignissimos ad.
+                        Alias facilis optio magnam sunt, nulla quod minus fugiat consequatur ea totam suscipit architecto. Sint,
+                        deserunt delectus possimus expedita ut nulla nobis repellat reprehenderit qui optio laboriosam voluptate
+                        ratione unde!
+                        Praesentium nesciunt dignissimos temporibus modi quos vitae veniam culpa neque nobis natus ipsa numquam
+                        libero voluptates perferendis, eius id itaque alias ut exercitationem. Molestiae eos provident
+                        inventore, ducimus numquam nostrum!
+                        Beatae nobis at, incidunt nihil aliquid unde blanditiis officiis numquam ipsa! Sit velit nisi autem
+                        deserunt voluptas, quia natus obcaecati ducimus iste sint inventore laboriosam aperiam! Quae possimus
+                        cum tempora.
+                        Modi reiciendis est velit, cumque porro necessitatibus hic quibusdam earum incidunt numquam sunt,
+                        voluptates nesciunt inventore quasi vitae fugiat, neque voluptatem? Maxime odio est non ab delectus
+                        sunt, magnam quas.
+                        Inventore laborum in aliquam iusto eius esse aperiam natus. Ipsum, eaque neque nihil ab laudantium quam
+                        at autem, in aliquid omnis consequuntur asperiores quisquam modi eos perferendis illum hic optio?
+                        Fuga alias dolore voluptatum autem id molestiae vel aut, eaque non doloribus sunt at fugiat veritatis
+                        iste architecto laborum. Quo error vel ex provident, tempore et rerum? Dolorem, ab aspernatur.
+                        Impedit quisquam temporibus vel eveniet ad debitis odio veritatis reiciendis ducimus! Tempora voluptates
+                        ex quas aliquid nostrum quam sit quidem in cupiditate blanditiis? Laborum excepturi deserunt provident!
+                        Cum, harum laboriosam?
+                        Nesciunt ratione, numquam veritatis repudiandae debitis nobis inventore perferendis modi. Nemo
+                        praesentium amet vitae repellendus autem, tempora rerum culpa excepturi facilis voluptates ullam velit
+                        corporis, laborum cupiditate beatae totam nam!
+                        Eligendi eos vitae dicta, aliquam quibusdam ea. Architecto voluptatibus quae pariatur dolorum delectus
+                        asperiores doloribus obcaecati possimus vel vero voluptatum a quod, inventore error laudantium quia
+                        aspernatur. Autem, expedita quo!</p>
+                    </section>
+    </section>
+
+    <footer>
+            <code>&#60;footer&#62;</code>
+    </footer>
     
 </body>
 </html>
