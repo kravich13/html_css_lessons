@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+header {
+    background-color:#e5e5e5;padding:15px;text-align:center;
+}
+.text1 {			
+        text-align:center;
+        float: left;
+        width: 20%;
+}
+.text1 a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.text2 {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.text3 {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+footer {
+    background-color:#e5e5e5;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+}
+
+@media only screen and (max-width:1000px) {
+        .text1, .text2, .text3 {
+            background: rebeccapurple;
+            width:100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+        <header>
+                <p>top</p>
+            </header>
+
+<div style="overflow:auto">
+        <section class="text1">
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+                <a href="#">Link4</a>
+            </section>
+
+  <section class="text2">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </section>
+
+  <section class="text3">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </section>
+</div>
+
+<footer>
+        <p>bottom</p>
+    </footer>
+
+</body>
+</html>
