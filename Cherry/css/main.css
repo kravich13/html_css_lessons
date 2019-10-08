@@ -22,6 +22,10 @@ body {
     flex-direction: column;
     align-items: center;
     background: #e3e4e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1::first-letter {
+    color: #ae4b5d;
 }
 input::placeholder {
     color: #757575;
@@ -39,7 +43,8 @@ header {
     display: flex;
     justify-content: space-around;
     height: 72px;
-    background: #2d323c;    
+    /* background: #2d323c;     */
+    background: linear-gradient(to top, #2d323c, #2d323c, #343f48);
     width: 100%;
 }
 .container-header {
@@ -48,7 +53,6 @@ header {
     width: 80%;
 }
 .top-text {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -57,18 +61,23 @@ header {
     padding: 0 10px;
     /* padding-right: 27%; */
 }
-.C {
+/* .C {
     color: #ae4b5d;
-}
+} */
 .pod-text {
     color: #656f7a;
     font-size: 14px;
     margin-top: -4px;
 }
-.cherry {
+/* .cherry {
     text-transform: uppercase;
     font-size: 30px;
     color: #a5adb8;
+} */
+.h1-top {
+    color: #a5adb8;
+    font-size: 30px;
+    font-weight: bold;
 }
 .search {
     background: #24272d;
@@ -83,6 +92,9 @@ header {
     align-items: center;
     padding: 0 10px;
 }
+.sear a {
+    padding-top: 3px;
+}
 /* ==========HEADER-ТОП========== */
 .top {
     display: flex;
@@ -91,7 +103,7 @@ header {
     width: 80%;
     height: 240px;
     background: rgb(99, 99, 99);
-    background-image: url("../img/header_bgimg.png");
+    background-image: url("../Img/header_bgimg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -99,12 +111,12 @@ header {
     padding-left: 40px;
     width: 50%;
 }
-.eaten {
+/* .eaten {
     font-size: 30px;
     color: #a5adb8;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
+} */
 .text1 {
     margin-bottom: 20px;
 }
@@ -117,7 +129,6 @@ header {
     color: #d9dcdf;
 }
 .text1, .text2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -133,7 +144,6 @@ nav a {
     color: white;
 }
 nav li {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 16px;
     margin: 10px 1.5%;
@@ -143,16 +153,18 @@ nav li {
     margin-right: 20px;
 }
 /* ==========ARTICLE-МЕНЮ========== */
-article li {
+.Article-top li {
     list-style-type: none;
 }
-article a {
+.Article-top a {
     color: #95161f;
 }
-article {
+.Article-top p {
+    color: #6b6f74;
+}
+.Article-top {
     display: flex;
     justify-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     width: 80%;
     background: #f3f3f3;
@@ -171,7 +183,6 @@ article {
 }
 .container-section {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
     background: white;
     width: 80%;
 }
@@ -182,7 +193,7 @@ article {
     flex-direction: column;
     width: 210px;
 }
-.left-menu .menu-left p {
+.left-menu .menu-left h2 {
     margin: 15px 13px;
 }
 .menu-left {
@@ -214,7 +225,7 @@ select {
 }
 .clickRED {
     background: #95161f;
-    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 5px rgb(119, 115, 115);
     font-size: 16px;
     margin-top: 17px;
     border: 6px solid #ffffff;
@@ -230,9 +241,18 @@ select {
     flex-direction: column;
     align-items: center;
 }
-.menu-text {
-    background: #ffffff;
+.aside-bottom {
     margin-bottom: 14px;
+}
+/* ==========ARTICLE-ВЕРХ========== */
+.container-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 18px;
+}
+.Right-top-link {
+    color: #95161f;
 }
 /* ==========SECTION-КАРТИНКИ========== */
 .section-center {
@@ -245,15 +265,23 @@ select {
 .container-screen {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
-.container-screen img {
+.images-section img {
     width: 100%;
     box-shadow: 0 4px 8px #00000073;
+}
+.screen-center {
+    margin-bottom: 18px;
+    text-decoration: none;
 }
 .container-screen p {
     margin-bottom: 15px;
     margin-top: 20px;
+}
+.Admin-panel, .Shortcodes, .Videos {
+    display: flex;
+    flex-direction: column;
 }
 .Admin-panel, .Shortcodes {
     margin-right: 15px;
@@ -267,7 +295,6 @@ select {
     display: flex; 
     justify-content: flex-start;
     margin-bottom: 35px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #5c646e;
 }
@@ -275,38 +302,48 @@ select {
     padding-right: 10px;
     line-height: 20px;
 }
-.headinG {
+/* .headinG {
     color: #a5adb8;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 22px;
+} */
+.h1-section {
+    color: #a5adb8;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
 }
-.Red {
+/* .Red {
     color: #ae4b5d;
-}
-.Black {
+} */
+/* .bold-title-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #282d33;
+} */
+.h2-section {
+    color: #282d33;
+    font-size: 18px;
+    font-weight: bold;
 }
 .Right-p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #5c646e;
 }
-.Red-a {
+.aside-bottom-link {
     font-size: 12px;
     color: #95161f;
+    margin-top: 17px;
 }
 .Left-p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: #5c646e;
+    line-height: 18px;
 }
 .Right-lists {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #5c646e;
@@ -327,7 +364,6 @@ select {
     padding-left: 18px;
 }
 .Span-lists {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: normal;
     background: #dedede;
@@ -341,6 +377,9 @@ select {
     color: #f3eced;
     background: #9c4757;
     padding: 0 22px;
+}
+.bold-th th {
+    font-weight: bold;
 }
 .section-table td {
     padding-left: 15px;
@@ -384,6 +423,14 @@ select {
     border-bottom-left-radius: 10px;
 }
 /* ==========FOOTER-НИЗ========== */
+.h2-footer {
+    color: #a5adb8;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cherry-footer {
+    color: #ae4b5d;
+}
 .footer-RED {
     display: flex;
     justify-content: space-around;
@@ -411,7 +458,6 @@ select {
 .footer-1, .footer-2, .footer-3 {
     width: 270px;
     padding: 32px 7px 27px 7px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: #85898f;
 }
@@ -426,12 +472,12 @@ footer hr {
     height: 1px;
     margin: 10px 0 13px 0;
 }
-.heading-top {
+/* .heading-top {
     color: #a5adb8;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
-}
+} */
 .togphone, .Call, .adress {
     line-height: 1.99em;
 }
