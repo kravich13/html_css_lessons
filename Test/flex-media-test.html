@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex-Media</title>
+    <style>
+     html,
+body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+        nav a:hover {
+        color: rgb(209, 209, 209);
+        background: linear-gradient(rgb(63, 63, 63), rgb(129, 4, 4));
+        transition: all 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(83, 83, 83);
+        }
+        /* li {
+            list-style-type: none;
+        } */
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+        .text1 {
+            padding: 0 10px;
+            background: rgb(54, 54, 54);
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+           
+        }
+        nav {
+            background: rgb(192, 6, 6);
+            padding: 5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav a {
+            background: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px;
+            font-size: 25px;
+            font-weight: 600;
+            /* position: relative; */
+            }
+        nav li {
+            width: 20%;
+            list-style: none;
+            position: relative;
+        }
+        header .text1 p {
+            font-size: 35px;
+            margin: 25px 0;
+            color: rgb(223, 0, 0);
+            font-weight: 600;
+        }
+        .colG {
+            background: rgb(209, 209, 209);
+            flex-grow: 5;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+        }
+        .se1 {
+            border: 1px solid rgb(214, 214, 214);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 255, 255);
+            padding: 5px;
+        }
+        .se1 p {
+            font-size: 20px;
+            margin: 0 5px;
+        }
+        iframe {
+            margin: 10px 5px;
+            width: 80%;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 100px;
+            padding: 20px;
+            background: rgb(54, 54, 54);
+        }
+        footer a {
+            margin: 0 10px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+        @media screen and (max-width: 1000px) {
+            section {
+                flex-direction: column;
+            }
+            nav {
+                
+            }
+            nav a  {
+                border: 1px solid black;
+                font-size: 23px;
+                margin: 0;
+                font-weight: 400;
+                /* padding:0; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="text1">
+                <p>Just Role Play</p>
+        </div>
+
+
+        <nav>
+            
+            <!-- <ul> -->
+                <li><a class="test1" href="">Гайды</a></li>           
+                <li><a class="colG" href="">Дефо</a></li>
+                <li><a href="">Влад</a></li>
+                <li><a class="colG" href="">Кравич</a></li>
+                <li><a href="">Конец</a></li>
+            <!-- </ul> -->
+
+        
+        </nav>
+
+    </header>
+
+    <section>
+
+        <div class="se1">
+        <p>Заголовок</p>
+        <iframe src="https://www.youtube.com/embed/pfkGLQTC3GU?controls=0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <p>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellendus cumque architecto, nostrum deleniti odit doloribus dolorem impedit libero odio, nobis voluptatibus quam provident ab, nesciunt culpa perspiciatis vero animi!</span>
+            <span>Officia fugit nulla odio non soluta deserunt repudiandae earum quaerat autem at, architecto eligendi officiis provident unde fugiat modi dicta culpa, a incidunt aspernatur. Consectetur quasi cupiditate similique quas unde.</span>
+            <span>Ipsam quo voluptatum tempore, vero ab consequatur! Tempore, temporibus! Aperiam officiis cum, earum laudantium voluptatibus, illum doloribus dolorum omnis ducimus ex, at facere quos aliquam tenetur aliquid? Saepe, ipsam hic.</span>
+            <span>Autem vitae pariatur incidunt non atque, enim facilis veniam dolor sapiente iure cum, laudantium totam inventore mollitia ab ut earum repudiandae, neque officiis minima distinctio ea. Consectetur nulla iste voluptatum!</span>
+            <span>Aperiam corporis tempore blanditiis, voluptate voluptas, eveniet consequuntur excepturi saepe perspiciatis porro sit, placeat perferendis iure voluptatum nesciunt atque assumenda nam odit. Pariatur qui optio exercitationem, mollitia ducimus velit consectetur?</span>
+        </p>
+    </div>
+
+    <div class="se1">
+            <p>Заголовок</p>
+            <iframe src="https://www.youtube.com/embed/pxjBhXtKHK0?controls=0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <p>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellendus cumque architecto, nostrum deleniti odit doloribus dolorem impedit libero odio, nobis voluptatibus quam provident ab, nesciunt culpa perspiciatis vero animi!</span>
+            <span>Officia fugit nulla odio non soluta deserunt repudiandae earum quaerat autem at, architecto eligendi officiis provident unde fugiat modi dicta culpa, a incidunt aspernatur. Consectetur quasi cupiditate similique quas unde.</span>
+            <span>Ipsam quo voluptatum tempore, vero ab consequatur! Tempore, temporibus! Aperiam officiis cum, earum laudantium voluptatibus, illum doloribus dolorum omnis ducimus ex, at facere quos aliquam tenetur aliquid? Saepe, ipsam hic.</span>
+            <span>Autem vitae pariatur incidunt non atque, enim facilis veniam dolor sapiente iure cum, laudantium totam inventore mollitia ab ut earum repudiandae, neque officiis minima distinctio ea. Consectetur nulla iste voluptatum!</span>
+            <span>Aperiam corporis tempore blanditiis, voluptate voluptas, eveniet consequuntur excepturi saepe perspiciatis porro sit, placeat perferendis iure voluptatum nesciunt atque assumenda nam odit. Pariatur qui optio exercitationem, mollitia ducimus velit consectetur?</span>
+        </p>
+    </div>
+
+    <div class="se1">
+            <p>Заголовок</p>
+            <iframe src="https://www.youtube.com/embed/Qs65jW7fXFk?controls=0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <p>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellendus cumque architecto, nostrum deleniti odit doloribus dolorem impedit libero odio, nobis voluptatibus quam provident ab, nesciunt culpa perspiciatis vero animi!</span>
+            <span>Officia fugit nulla odio non soluta deserunt repudiandae earum quaerat autem at, architecto eligendi officiis provident unde fugiat modi dicta culpa, a incidunt aspernatur. Consectetur quasi cupiditate similique quas unde.</span>
+            <span>Ipsam quo voluptatum tempore, vero ab consequatur! Tempore, temporibus! Aperiam officiis cum, earum laudantium voluptatibus, illum doloribus dolorum omnis ducimus ex, at facere quos aliquam tenetur aliquid? Saepe, ipsam hic.</span>
+            <span>Autem vitae pariatur incidunt non atque, enim facilis veniam dolor sapiente iure cum, laudantium totam inventore mollitia ab ut earum repudiandae, neque officiis minima distinctio ea. Consectetur nulla iste voluptatum!</span>
+            <span>Aperiam corporis tempore blanditiis, voluptate voluptas, eveniet consequuntur excepturi saepe perspiciatis porro sit, placeat perferendis iure voluptatum nesciunt atque assumenda nam odit. Pariatur qui optio exercitationem, mollitia ducimus velit consectetur?</span>
+        </p>
+    </div>
+
+    </section>
+  
+    <footer>
+        <a href="">Играй</a>
+        <a href="">Наслаждайся</a>
+        <a href="">Помни</a>
+        <a href="">Будь</a>
+        <a href="">Топ</a>
+    </footer>
+
+</body>
+</html>

@@ -6,31 +6,219 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .my-flex-container {
+        html,
+body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+    * {
+    
+    }
+    .text1 a:hover {
+        color: rgb(255, 255, 255);
+    }
+    .container-nav li:hover {
+        background: rgb(2, 192, 50);
+    }
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+        .container {
+            padding: 50px;
             display: flex;
             justify-content: center;
+            font-size: 28px;
+            color: rgb(219, 0, 0);
+            font-weight: 600;
+            background-image: url(1280901073.jpg); 
+            background-repeat: no-repeat; 
+            background-size: 100%;
+            border: 1px solid black;
+        }
+        .container p {
+            background: rgba(80, 80, 80, 0.555);
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .container-nav {
+            background: rgb(25, 102, 133); 
+            display: flex;
+            justify-content: flex-end;
+            padding: 1px 20px 10px;
+        }
+        .container-nav li {
+            display: flex;
+            background: rgb(255, 255, 255);
+            padding: 5px;
+            margin: 1px 3px 0 0;
+        }
+        .my-flex-container {
+            display: flex;
+            background: rgb(139, 139, 139);
+            border: 1px solid black;
+        }
+        /* @supports (display: flex) {
+        @media screen and (max-width: 600px) {
+            .cent {
+                justify-content: center;
+            }
+        }
+        } */
+        .text1, .text2 {
+            padding: 10px;
+            background: rgb(25, 102, 133); 
+            color: aliceblue;
+            /* border: 1px solid black; */
+        }
+        .text1 div .zag {
+            padding-left: 20px;
             background: black;
         }
-        .my-flex-block {
-            border-radius: 10px;
-            padding: 25px;
-            text-align: center;
-            margin: 10px;
-            width: 30%;
-            background: rebeccapurple;
+        .text1 .left1 div {
+            padding: 10px 5px 30px 0;
         }
+        .text1 div a {
+            color: rgb(0, 0, 0);
+            margin: -10px;
+        }
+        .text2 section {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .text1 {
+            flex: 1;
+        }
+        .text2 {
+            flex: 8;
+            background: rgb(230, 230, 230);
+            color: black;
+        }
+        .container-you {
+            display: flex;
+            justify-content: space-around;
+        }
+        iframe {
+            margin: 2px;
+            width: 25%; 
+            height: auto;
+        }
+        /* @supports (display: flex) {
+        @media screen and (max-width: 1800px) {
+        .my-flex-container {
+            flex-direction: column-reverse;
+        }
+        .container-nav {
+            justify-content: center;
+        }
+        }
+        } */
+        /* @supports (display: flex) {
+        @media screen and (max-width: 1700px) and (min-width: 800px) {
+            .cent div .container-you {
+                flex-direction: column;
+            }
+        }
+        } */
     </style>
 </head>
 <body>
-    <div class="my-flex-container">
-        <div class="my-flex-block">item1</div>
-        <div class="my-flex-block">item2</div>
-        <div class="my-flex-block">item3</div>
-        <div class="my-flex-block">item1</div>
-        <div class="my-flex-block">item2</div>
-        <div class="my-flex-block">item3</div>
-    </div>
 
+    <header class="container">
+
+        <p>Vlad Kravich</p>
+
+    </header>
+
+    <nav class="container-nav">
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Suscipit!</a></li>
+        <li><a href="">Officiis.</a></li>
+        <li><a href="">Adipisci.</a></li>
+        <li><a href="">Laboriosam.</a></li>
+        <li><a href="">Non.</a></li>
+        <li><a href="">Nulla?</a></li>
+        <li><a href="">Rerum!</a></li>
+
+    </nav>
+
+    <div class="my-flex-container">
+
+        <aside class="text1">
+            <div class="left1">
+                <p class="zag">Vlad:</p>
+                <div>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Beatae.</a></li>
+                    <li><a href="">Iure!</a></li>
+                    <li><a href="">Asperiores?</a></li>
+                    <li><a href="">Cum.</a></li>
+                    <li><a href="">Ullam.</a></li>
+                    <li><a href="">Dignissimos?</a></li>
+                    <li><a href="">Fugit!</a></li>
+                </div>
+            </div>
+
+            <div class="left1">
+                <p class="zag">Kravich:</p>
+                <div>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Beatae.</a></li>
+                    <li><a href="">Iure!</a></li>
+                    <li><a href="">Asperiores?</a></li>
+                    <li><a href="">Cum.</a></li>
+                    <li><a href="">Ullam.</a></li>
+                    <li><a href="">Dignissimos?</a></li>
+                    <li><a href="">Fugit!</a></li>
+                </div>
+            </div>
+
+            <div class="left1">
+                <p class="zag">Kravich:</p>
+                <div>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Beatae.</a></li>
+                    <li><a href="">Iure!</a></li>
+                    <li><a href="">Asperiores?</a></li>
+                    <li><a href="">Cum.</a></li>
+                    <li><a href="">Ullam.</a></li>
+                    <li><a href="">Dignissimos?</a></li>
+                    <li><a href="">Fugit!</a></li>
+                </div>
+            </div>
+        </aside>
+
+        <section class="text2">
+
+            <section class="cent">
+                <h2>Defo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dolor et aut repellendus rerum
+                    magni qui sequi, perspiciatis non eaque beatae vero culpa? Reiciendis id cumque ullam eum facere
+                    officiis pariatur iste facilis impedit beatae voluptatum, aperiam iusto nostrum, mollitia quod illo,
+                    tenetur quos maxime fugiat repellendus dolor ratione. Repellat.</p>
+
+                <div class="container-you">
+                    <iframe src="https://www.youtube.com/embed/pfkGLQTC3GU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/pxjBhXtKHK0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Qs65jW7fXFk?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+    
 </body>
 
 </html>
